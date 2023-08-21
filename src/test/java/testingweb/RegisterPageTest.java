@@ -8,7 +8,6 @@ import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
 import java.time.Duration;
 
 public class RegisterPageTest {
@@ -16,7 +15,7 @@ public class RegisterPageTest {
 	static WebDriver driver = null;
 
 	/**
-	 * reuseable login
+	 * reuseable register
 	 * @param driver
 	 * @throws InterruptedException
 	 */
@@ -31,7 +30,7 @@ public class RegisterPageTest {
 	@BeforeClass
 	public static void setup(){
 		// setting browsers path
-		System.setProperty("webdriver.chrome.driver", "/Users/macocean/Documents/Testingsilenium/chromedriver/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/Users/macocean/Documents/Testingsilenium/chromedriver-116.0.5845.96-116.0.5845.96-116.0.5845.96/chromedriver-116.0.5845.96-116.0.5845.96-116.0.5845.96-116.0.5845.96");
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.addArguments("--remote-allow-origins=*","ignore-certificate-errors");
 		driver = new ChromeDriver(chromeOptions);
@@ -295,7 +294,7 @@ public class RegisterPageTest {
 			register(driver);
 			String firstName = "Fachri";
 			String lastName = "Putra";
-			String email = "Jiung12@gmail.com";
+			String email = "Jiung13@gmail.com";
 			String password = "Fachri12@";
 
 
@@ -319,10 +318,10 @@ public class RegisterPageTest {
 
 		}
 
-	@AfterClass
-	public  static void tearDown() throws InterruptedException {
-		Thread.sleep(2000);
-		driver.quit();
-	}
+////	@AfterClass
+//	public  static void tearDown() throws InterruptedException {
+//		Thread.sleep(2000);
+//		driver.quit();
+//	}
 
 }

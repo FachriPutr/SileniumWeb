@@ -19,7 +19,7 @@ public class AppointmentPageTest {
   @BeforeClass
   public void setup(){
     // setting browsers path
-    System.setProperty("webdriver.chrome.driver","D:/Garin/Learning/drivers/chromedriver.exe");
+    System.setProperty("webdriver.chrome.driver","D:/Garin/Learning/drivers/chromedriver-116.0.5845.96-116.0.5845.96-116.0.5845.96-116.0.5845.96.exe");
     driver = new ChromeDriver();
     driver.manage().window().maximize();
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));

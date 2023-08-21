@@ -45,7 +45,7 @@ public class LoginPageTest<driver> {
   @BeforeClass
   public static void setup(){
     // setting browsers path
-    System.setProperty("webdriver.chrome.driver", "/Users/macocean/Documents/Testingsilenium/chromedriver/chromedriver");
+    System.setProperty("webdriver.chrome.driver", "/Users/macocean/Documents/Testingsilenium/chromedriver-116.0.5845.96-116.0.5845.96-116.0.5845.96-116.0.5845.96/chromedriver-116.0.5845.96-116.0.5845.96-116.0.5845.96-116.0.5845.96");
     ChromeOptions chromeOptions = new ChromeOptions();
     chromeOptions.addArguments("--remote-allow-origins=*","ignore-certificate-errors");
     driver = new ChromeDriver(chromeOptions);
